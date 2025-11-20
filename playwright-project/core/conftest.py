@@ -1,3 +1,4 @@
+from core.environment import init_environment
 import os
 import pytest
 from datetime import datetime
@@ -5,7 +6,13 @@ from playwright.sync_api import sync_playwright
 from core.logger import logger
 from core.config_loader import config
 import allure
-from core.environment import init_environment
+
+def pytest_configure(config):
+    init_environment()
+
+    if hasattr(config, "_metadata"):
+        config._metadata["CI"] = os.getenv("CI", "false")
+        config._metadata["ENV"] = os.getenv("TEST_ENV", "local")
 
 
 # -----------------------
