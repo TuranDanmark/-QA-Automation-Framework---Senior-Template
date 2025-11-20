@@ -1,0 +1,9 @@
+ui:
+  base_url_heroku: "https://the-internet.herokuapp.com"
+  base_url_alibaba: "https://www.alibaba.com/"
+  headless: false
+  record_video: true
+  record_har: true
+
+api:
+  base_url: "https://reqres.in/api"

@@ -1,0 +1,8 @@
+pytest>=7.0
+pytest-xdist
+pytest-html
+pytest-rerunfailures
+allure-pytest
+requests
+playwright
+PyYAML

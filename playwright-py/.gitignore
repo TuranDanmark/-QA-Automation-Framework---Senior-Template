@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.env
+test.log
+screens/
+videos/
+network.har
+reports/allure-results/
+reports/allure-report/
+report.html
